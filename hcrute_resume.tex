@@ -37,16 +37,16 @@
 
 \begin{rSection}{Education}
 
-{\bf University of Texas at Austin} \hfill {\em August 2015 - Present} \\ 
+{\bf University of Texas at Austin} \hfill {\em August 2015 - May 2017} \\
 M.S. in Electrical \& Computer Engineering \\
 Academic Focus in Architecture, Computer Systems, and Embedded Systems \\
 
-{\bf University of California, Santa Cruz} \hfill {\em September 2011 - June 2015} \\ 
+{\bf University of California, Santa Cruz} \hfill {\em September 2011 - June 2015} \\
 B.S. in Computer Engineering \\
 Minor in Computer Science \\
+Member of Tau Beta Pi Engineering Honor Society \\
 Dean's Undergraduate Research Award: May 2015 \\
 Dean's Honors: Fall 2013 - Spring 2014 \\
-Member of Tau Beta Pi Engineering Honor Society \\
 
 \end{rSection}
 
@@ -55,6 +55,13 @@ Member of Tau Beta Pi Engineering Honor Society \\
 %----------------------------------------------------------------------------------------
 
 \begin{rSection}{Experience}
+
+\begin{rSubsection}{Qualcomm}{May 2016 - August 2016}{Modem Firmware Intern}{San Diego, CA}
+\item Implemented a UE Specific Regerence Signal Interference Cancellation and Equalization algorithm.
+\item Used a proprietary SIMD VLIW singnal processing architecture.
+\item The final product accomplished matrix inverse approximations using an optimized combination of the Gauss-Seidel method, Cholesky decomposition, and backwards substitution over large non-sparse matrices of complex numbers.
+\item Verified and validated the algorithms using Matlab, and C. Finally partially optimized in assembly.
+\end{rSubsection}
 
 \begin{rSubsection}{UC Santa Cruz}{June 2014 - June 2015}{Research Assistant}{Santa Cruz, CA}
 \item Wrote PIC32 firmware for intermediate data flow control and processing between the MCP3912 sigma delta ADC and wifi/usb controllers.
@@ -71,14 +78,6 @@ Member of Tau Beta Pi Engineering Honor Society \\
 \item Helped manage conferences, research symposiums, classes, job fairs, and other events requesting CITRIS space.
 \end{rSubsection}
 
-%------------------------------------------------
-
-\begin{rSubsection}{iD Tech Camps}{Summer 2012 - 2013}{Instructor}{Irvine, CA and Los Angeles, CA}
-\item Taught an introduction to programming in Java using Eclipse to kids ages 13 to 17.
-\item Taught a LEGO Robot Mindstorms curriculum to kids ages 8 to 12.
-\item Includes interaction between programming, the physical world, and problem solving.
-\end{rSubsection}
-
 \end{rSection}
 
 
@@ -92,10 +91,10 @@ Member of Tau Beta Pi Engineering Honor Society \\
 
 \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
 Computer Languages & C/C++, Embedded C, Python, Assembly, Java, \\
- & Matlab, SystemVerilog, Perl \\
+ & Matlab, Verilog, Perl \\
 Communication \& Networking & TCP \& UDP IPs, PAM-N \& QAM-N Transceivers \\
 Tools \& Platforms & Git, Mercurial, gem5, Code Composer, Eclipse, \\
- & MPLAB, NP++, Geany, FDATool
+ & MPLAB, NP++, Geany, FDATool, VCS
 \end{tabular}
 
 \end{rSection}
@@ -106,8 +105,8 @@ Tools \& Platforms & Git, Mercurial, gem5, Code Composer, Eclipse, \\
 
 \begin{rSection}{Additional Example Projects}
 
+\item {\bf x86 Processor} - Designed a processor with an x86 instruction set specified by the IA-32 Intel Architecture Software Developer's Manual in a team of four engineers. Built using only structural Verilog. The micro-architecture included a 7 stage pipeline, simple two level branch predictor, and i-cache, d-cache, DMA, I/O controllers sharing a 32 bit bus. The micro-architecture also handled interrupts, and precise exceptions.
 \item {\bf SRRIP Replacement Policy} - Built using C++ and Python. Added the Static Re-Reference Interval Prediction policy in C++ to gem5 and compared it to the already implemented LRU policy. Statistics of cache misses for different associativity and sizes were obtained using python and SPEC CPU 2006 test benches.
-\item {\bf Array Multiplier Variants} - Built using Verilog. Analyzed the differences in complexity and delay between having regular ripple carry adders and carry select adders for columns and rows. Used Quartus II to synthesize and obtain timing results, and Modelsim to verify the different designs.
 \item {\bf Compiler} - Built using C++, Flex, and Bison. The compiler scans, parses, type checks, and outputs appropriately translated assembly code. The language is a subset of C, and includes structs, loops, variables, if statements, scope, functions, and more.
 \item {\bf Foobar Challenges} - Built using python. Documented and solved numerous coding challenges in the topics of algorithms, data structures, low-level representation, math, and cryptography.
 
